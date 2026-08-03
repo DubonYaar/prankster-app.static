@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Prankster — create hilarious AI-powered birthday pranks from your photos. Download on the App Store."
+    />
+    <title>Prankster — Birthday pranks, powered by AI</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%);
+        min-height: 100vh;
+        padding: 20px;
+        color: #1d1d1f;
+      }
+      .container {
+        max-width: 880px;
+        margin: 0 auto;
+      }
+      .hero {
+        background: linear-gradient(
+          135deg,
+          #ff2d55 0%,
+          #ff6b8a 50%,
+          #ff9500 100%
+        );
+        border-radius: 24px;
+        padding: 48px 32px 40px;
+        margin-bottom: 24px;
+        color: white;
+        text-align: center;
+        box-shadow: 0 8px 32px rgba(255, 45, 85, 0.25);
+      }
+      .hero .logo-mark {
+        font-size: 56px;
+        line-height: 1;
+        margin-bottom: 16px;
+        filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+      }
+      .hero h1 {
+        font-size: clamp(28px, 5vw, 40px);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        margin-bottom: 12px;
+      }
+      .hero .tagline {
+        font-size: 18px;
+        line-height: 1.5;
+        opacity: 0.95;
+        max-width: 520px;
+        margin: 0 auto 28px;
+      }
+      .app-store-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .app-store-wrap a {
+        display: inline-block;
+        line-height: 0;
+        border-radius: 10px;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .app-store-wrap a:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      }
+      .app-store-wrap a:focus-visible {
+        outline: 3px solid rgba(255, 255, 255, 0.9);
+        outline-offset: 4px;
+      }
+      .app-store-wrap img {
+        height: 54px;
+        width: auto;
+        display: block;
+      }
+      .panel {
+        background: white;
+        border-radius: 20px;
+        padding: 32px;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+        margin-bottom: 20px;
+      }
+      .panel h2 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        color: #1d1d1f;
+      }
+      .panel p {
+        font-size: 16px;
+        line-height: 1.65;
+        color: #424245;
+        margin-bottom: 14px;
+      }
+      .panel p:last-child {
+        margin-bottom: 0;
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        margin-top: 8px;
+      }
+      .feature {
+        background: #f5f5f7;
+        border-radius: 16px;
+        padding: 22px;
+        text-align: center;
+      }
+      .feature .icon {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+      .feature h3 {
+        font-size: 17px;
+        font-weight: 600;
+        color: #1d1d1f;
+        margin-bottom: 8px;
+      }
+      .feature p {
+        font-size: 14px;
+        color: #86868b;
+        line-height: 1.5;
+        margin: 0;
+      }
+      .footer {
+        text-align: center;
+        padding: 8px 16px 24px;
+        font-size: 14px;
+        color: #86868b;
+      }
+      .footer a {
+        color: #ff2d55;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="hero">
+        <div class="logo-mark" aria-hidden="true">🎭</div>
+        <h1>Prankster</h1>
+        <p class="tagline">
+          Turn ordinary birthday photos into unforgettable, laugh-out-loud
+          moments. Prankster uses AI to help you create fun, shareable
+          pranks—fast.
+        </p>
+        <div class="app-store-wrap">
+          <!-- Replace the href with your App Store product URL when the app is live. -->
+          <a
+            href="https://apps.apple.com/il/app/prankster-ai/id6757073273"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download Prankster on the App Store"
+          >
+            <img
+              src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
+              alt="Download on the App Store"
+              width="180"
+              height="54"
+            />
+          </a>
+        </div>
+      </header>
+
+      <section class="panel">
+        <h2>What is Prankster?</h2>
+        <p>
+          Ever wondered what your friends would look like in the most ridiculous
+          situations imaginable? Now you don’t have to imagine—our AI does it
+          for you in seconds. Take any photo and drop it straight into one of
+          our wild themes: * Cake Smash – Because no face is safe from frosting.
+          * Cake Smash Celeb – Pick your favorite celeb and let them do the
+          smashing. * I Crashed the Car – Turn a normal ride into a dramatic
+          “oops” moment. * Fo Fatso – Add some… generous proportions * I’m So
+          Pregnant – Instant baby bump, zero commitment. * Extreme Makeover –
+          From sweet to street in seconds (tattoos, piercings, attitude). * So
+          Popular – Suddenly, you’re the center of attention. * Look Who I Ran
+          Into – Fake the perfect celeb selfie like a pro. Why it’s addictive *
+          Powered by advanced AI transformations * Ridiculously fast results *
+          No editing skills needed * Endless combinations = endless laughs
+          Subscription Information: * Weekly Subscription (auto-renewable) *
+          Price: $9.99 Payment will be charged to your Apple ID account at
+          confirmation of purchase. Subscriptions automatically renew unless
+          canceled at least 24 hours before the end of the current period. You
+          can manage or cancel your subscription in your App Store account
+          settings. Disclaimer: This app uses AI-generated image transformations
+          for entertainment purposes only. The generated images may appear
+          realistic or misleading. Users are solely responsible for how they
+          use, share, or distribute generated content. Please use the app
+          responsibly and respect the privacy and consent of others. Terms of
+          Use (EULA): https://www.prankster-app.com/eula Privacy Policy:
+          https://www.prankster-app.com/privacy Face Data & Privacy The app uses
+          on-device image processing to detect whether a face is present in a
+          photo in order to enable certain features. This processing occurs
+          entirely on the user’s device. The app does not collect, store,
+          transmit, or share any facial data or biometric identifiers.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Why you will love it</h2>
+        <div class="features">
+          <div class="feature">
+            <div class="icon" aria-hidden="true">🎂</div>
+            <h3>Birthday-focused pranks</h3>
+            <p>
+              Tailored ideas and styles that fit celebrations and group chats.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="icon" aria-hidden="true">✨</div>
+            <h3>Polished AI images</h3>
+            <p>Clear, vibrant results you will be proud to post or print.</p>
+          </div>
+          <div class="feature">
+            <div class="icon" aria-hidden="true">🔒</div>
+            <h3>Built for privacy</h3>
+            <p>
+              Your photos are handled with care; see our policy for details.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Credits &amp; subscriptions</h2>
+        <p>
+          Each generation uses credits. New users get credits to try Prankster,
+          and you can buy more or subscribe for recurring credits through the
+          App Store—manage or cancel anytime in your Apple ID settings.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="eula.html">Terms</a>
+      </footer>
+    </div>
+  </body>
+</html>

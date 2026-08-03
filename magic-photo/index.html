@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Magic Photo AI — transform and enhance your photos with AI. Download on the App Store."
+    />
+    <title>Magic Photo AI — Magical photo transformations</title>
+    <style>
+      :root {
+        --cyan: #00d8ff;
+        --blue: #007aff;
+        --purple: #8b5cf6;
+        --magenta: #c026d3;
+        --bg-deep: #0b0b1a;
+        --bg-card: #141428;
+        --text: #f5f5f7;
+        --muted: #a1a1b5;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background:
+          radial-gradient(ellipse at 20% 0%, rgba(0, 216, 255, 0.18), transparent 50%),
+          radial-gradient(ellipse at 90% 20%, rgba(139, 92, 246, 0.22), transparent 45%),
+          linear-gradient(160deg, #0b0b1a 0%, #12122a 50%, #1a1040 100%);
+        min-height: 100vh;
+        padding: 20px;
+        color: var(--text);
+      }
+      .container {
+        max-width: 880px;
+        margin: 0 auto;
+      }
+      .hero {
+        background: linear-gradient(
+          135deg,
+          #00d8ff 0%,
+          #007aff 45%,
+          #8b5cf6 78%,
+          #c026d3 100%
+        );
+        border-radius: 24px;
+        padding: 48px 32px 40px;
+        margin-bottom: 24px;
+        color: white;
+        text-align: center;
+        box-shadow:
+          0 8px 40px rgba(0, 122, 255, 0.35),
+          0 0 60px rgba(139, 92, 246, 0.2);
+      }
+      .hero .logo-mark {
+        font-size: 56px;
+        line-height: 1;
+        margin-bottom: 16px;
+        filter: drop-shadow(0 2px 12px rgba(255, 255, 255, 0.35));
+      }
+      .hero h1 {
+        font-size: clamp(28px, 5vw, 40px);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        margin-bottom: 12px;
+      }
+      .hero .tagline {
+        font-size: 18px;
+        line-height: 1.5;
+        opacity: 0.95;
+        max-width: 540px;
+        margin: 0 auto 28px;
+      }
+      .app-store-wrap {
+        display: flex;
+        justify-content: center;
+      }
+      .app-store-wrap a {
+        display: inline-block;
+        line-height: 0;
+        border-radius: 10px;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .app-store-wrap a:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      }
+      .app-store-wrap img {
+        height: 54px;
+        width: auto;
+        display: block;
+      }
+      .panel {
+        background: rgba(20, 20, 40, 0.92);
+        border: 1px solid rgba(0, 216, 255, 0.12);
+        border-radius: 20px;
+        padding: 32px;
+        box-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+        margin-bottom: 20px;
+      }
+      .panel h2 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        color: var(--text);
+      }
+      .panel p {
+        font-size: 16px;
+        line-height: 1.65;
+        color: var(--muted);
+        margin-bottom: 14px;
+      }
+      .panel p:last-child {
+        margin-bottom: 0;
+      }
+      .panel a {
+        color: var(--cyan);
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        margin-top: 8px;
+      }
+      .feature {
+        background: rgba(11, 11, 26, 0.8);
+        border: 1px solid rgba(139, 92, 246, 0.2);
+        border-radius: 16px;
+        padding: 22px;
+        text-align: center;
+      }
+      .feature .icon {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+      .feature h3 {
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 8px;
+      }
+      .feature p {
+        font-size: 14px;
+        color: var(--muted);
+        line-height: 1.5;
+        margin: 0;
+      }
+      .footer {
+        text-align: center;
+        padding: 8px 16px 24px;
+        font-size: 14px;
+        color: var(--muted);
+      }
+      .footer a {
+        color: var(--cyan);
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="hero">
+        <div class="logo-mark" aria-hidden="true">✨</div>
+        <h1>Magic Photo AI</h1>
+        <p class="tagline">
+          Transform everyday photos into polished, shareable moments. Magic
+          Photo AI uses AI to enhance, restyle, and reimagine your
+          pictures—fast.
+        </p>
+        <div class="app-store-wrap">
+          <a
+            href="https://apps.apple.com/app/id6785163231"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download Magic Photo AI on the App Store"
+          >
+            <img
+              src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
+              alt="Download on the App Store"
+              width="180"
+              height="54"
+            />
+          </a>
+        </div>
+      </header>
+
+      <section class="panel">
+        <h2>What is Magic Photo AI?</h2>
+        <p>
+          Magic Photo AI is an iOS app for anyone who wants more from their
+          camera roll. Pick a photo, choose a look, and let AI deliver
+          high-quality results you can save and share.
+        </p>
+        <p>
+          Whether you are restoring an old picture, trying a creative style, or
+          polishing a portrait, Magic Photo AI keeps the focus on great
+          results—without complicated editing tools.
+        </p>
+        <p>
+          Subscription Information: Weekly Subscription (auto-renewable).
+          Payment will be charged to your Apple ID account at confirmation of
+          purchase. Subscriptions automatically renew unless canceled at least
+          24 hours before the end of the current period. You can manage or
+          cancel your subscription in your App Store account settings.
+        </p>
+        <p>
+          Disclaimer: This app uses AI-generated image transformations for
+          entertainment and creative purposes. The generated images may appear
+          realistic or misleading. Users are solely responsible for how they
+          use, share, or distribute generated content. Please use the app
+          responsibly and respect the privacy and consent of others.
+        </p>
+        <p>
+          Terms of Use (EULA):
+          <a href="eula.html">eula.html</a><br />
+          Privacy Policy:
+          <a href="privacy.html">privacy.html</a>
+        </p>
+        <p>
+          Face Data &amp; Privacy: The app uses on-device image processing to
+          detect whether a face is present in a photo in order to enable certain
+          features. This processing occurs entirely on the user’s device. The
+          app does not collect, store, transmit, or share any facial data or
+          biometric identifiers.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Why you will love it</h2>
+        <div class="features">
+          <div class="feature">
+            <div class="icon" aria-hidden="true">📷</div>
+            <h3>Photo-first tools</h3>
+            <p>
+              Styles and enhancements built around real photos you already have.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="icon" aria-hidden="true">✨</div>
+            <h3>Polished AI images</h3>
+            <p>Clear, vibrant results you will be proud to post or print.</p>
+          </div>
+          <div class="feature">
+            <div class="icon" aria-hidden="true">🔒</div>
+            <h3>Built for privacy</h3>
+            <p>
+              Your photos are handled with care; see our policy for details.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Credits &amp; subscriptions</h2>
+        <p>
+          Each generation uses credits. New users get credits to try Magic Photo
+          AI, and you can buy more or subscribe for recurring credits through
+          the App Store—manage or cancel anytime in your Apple ID settings.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="eula.html">Terms</a>
+      </footer>
+    </div>
+  </body>
+</html>
